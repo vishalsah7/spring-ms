@@ -11,25 +11,15 @@ import java.security.Principal;
 import java.util.List;
 
 @RestController
-@RequestMapping("/home")
-public class Home {
+@RequestMapping("/test")
+public class TestController {
 
     @Autowired
     private UserService userService;
 
-
+    @GetMapping("/welcome")
     public String welcome(){
         String test = "authenticated users access only";
         return test;
-    }
-
-    @GetMapping("/users")
-    public List<User> getUsers(){
-        return userService.getUsers();
-    }
-
-    @GetMapping("/current-user")
-    public String getCurrentUser(Principal principal){
-        return principal.getName();
     }
 }
