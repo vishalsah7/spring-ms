@@ -21,7 +21,7 @@ import java.io.IOException;
 
 /**
  *  Create JWTAuthenticationFilter that extends OncePerRequestFilter and override method and write the logic to check the
- *  token that is comming in header. We have to write 5 important logic
+ *  token that is coming in header. We have to write 5 important logic
  *
  * Get Token from request
  * Extract Username from token
